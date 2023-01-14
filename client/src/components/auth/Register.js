@@ -1,10 +1,9 @@
 import { useState } from 'react';
 import { AuthConsumer } from "../../providers/AuthProvider";
-import { MainButton } from '../styles/shared';
 
 const Register = ({ handleRegister }) => {
   const [user, setUser] = useState({ email: '', fname: '', lname: '', phone: '', password: '', passwordConfirmation: '' }) 
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.password === user.passwordConfirmation) {
@@ -42,7 +41,7 @@ const Register = ({ handleRegister }) => {
           value={user.lname}
           onChange={(e) => setUser({ ...user, lname: e.target.value })}
         />
-        <label>Phone</label>
+        <label>phone</label>
         <input
           type='number'
           required
@@ -68,7 +67,7 @@ const Register = ({ handleRegister }) => {
           type='password'
           onChange={(e) => setUser({ ...user, passwordConfirmation: e.target.value })}
         />
-        <MainButton type='submit'>Submit</MainButton>
+        <button type='submit'>Submit</button>
       </form>
     </>
   )

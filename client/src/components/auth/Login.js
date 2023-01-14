@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { AuthConsumer } from "../../providers/AuthProvider";
-import { MainButton } from '../styles/shared';
 
 const Login = ({ handleLogin }) => {
   const [user, setUser] = useState({ email: '', password: '' })
@@ -33,7 +32,7 @@ const Login = ({ handleLogin }) => {
           type='password'
           onChange={(e) => setUser({ ...user, password: e.target.value })}
         />
-        <MainButton type='submit'>Submit</MainButton>
+        <button type='submit'>Submit</button>
       </form>
     </>
   )  

@@ -1,4 +1,3 @@
-import UsergoalList from '../usergoals/UsergoalList';
 
 const Dashboard = () => {
   return (
