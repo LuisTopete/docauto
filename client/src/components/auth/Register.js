@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { AuthConsumer } from "../../providers/AuthProvider";
 
 const Register = ({ handleRegister }) => {
-  const [user, setUser] = useState({ email: '', fname: '', lname: '', phone: 0, password: '', passwordConfirmation: '' }) 
-  
+  const [user, setUser] = useState({ email: '', fname: '', lname: '', phone: '', password: '', passwordConfirmation: '' }) 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (user.password === user.passwordConfirmation) {
