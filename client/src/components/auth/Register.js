@@ -47,7 +47,7 @@ const Register = ({ handleRegister }) => {
           required
           name='phone'
           value={user.phone}
-          onChange={(e) => setUser({ ...user, phone: e.target.value) })}
+          onChange={(e) => setUser({ ...user, phone: e.target.value })}
         />
         <label>Password</label>
         <input
