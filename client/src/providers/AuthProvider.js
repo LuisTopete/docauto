@@ -51,7 +51,7 @@ const AuthProvider = ({ children }) => {
     data.append('fname', updateUserObj.fname)
     data.append('lname', updateUserObj.lname)
     data.append('email', updateUserObj.email)
-    data.append('age', updateUserObj.age)
+    data.append('phone', updateUserObj.phone)
 
     axios.put(`/api/users/${user.id}`, data )
       .then( res => {
