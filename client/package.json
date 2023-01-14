@@ -20,10 +20,6 @@
     "web-vitals": "^2.1.4"
   },
   "proxy": "http://localhost:3001",
-<<<<<<< HEAD
-
-=======
->>>>>>> bb9230c3 (more auth)
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
